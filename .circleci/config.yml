@@ -25,7 +25,7 @@ jobs:
     docker:
       - image: katalonstudio/report-uploader:0.0.7.11
     environment:
-      PROJECT_ID: 50236
+      PROJECT_ID: 160227
       TYPE: junit
       REPORT_PATH: /katalon/report
     steps:
