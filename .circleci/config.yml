@@ -23,11 +23,11 @@ jobs:
 
   upload-report:
     docker:
-      - image: katalonstudio/report-uploader:0.0.7.11
+      - image: katalonstudio/report-uploader:0.0.8
     environment:
-      PROJECT_ID: 160227
-      TYPE: junit
-      REPORT_PATH: /katalon/report
+      PROJECT_ID: 115062
+      TYPE: katalon
+      REPORT_PATH: Reports
     steps:
       - attach_workspace:
           at: /katalon
@@ -41,4 +41,3 @@ workflows:
       - upload-report:
           requires:
             - test
-
